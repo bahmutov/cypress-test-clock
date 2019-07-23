@@ -1,0 +1,17 @@
+<head>
+  <style>
+    body {
+      font-size: xx-large;
+      padding: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+  <script>
+    let clock = document.getElementById('clock')
+    setInterval(() => {
+      clock.innerText = performance.now().toFixed()
+    }, 100)
+  </script>
+</body>
